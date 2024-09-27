@@ -1,7 +1,7 @@
 export default function HeroSection() {
     return <section id="heroSection" className="hero-section">
         <div className="hero--section--content--box">
-            <div className="hero--section--content">
+            <div className="hero--section--content hero-title">
                 <h1 className="hero--section--title"> Hoang Vinh</h1>
                 <h1 className="hero--section--title">Nguyen</h1>
                 

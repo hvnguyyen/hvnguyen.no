@@ -3,7 +3,7 @@ export default function AboutMe() {
         <section id="AboutMe" className="about--section"> 
             
             <div className="hero--section--content--box about--section--box">
-                <div className="hero--section--content">
+                <div className="hero--section--content about-container">
               
                     <h1 className="skills-section--heading">About</h1>
                     <p className="hero--section-description">Hi, I'm Hoang Vinh! I am currently pursuing a Bachelor's degree in Information Technology at Western Norway University of Applied Sciences. </p>

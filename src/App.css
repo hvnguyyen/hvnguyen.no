@@ -216,6 +216,16 @@ h3 {
     width: 100%;
     padding: 1rem;
 }
+.hero-title {
+  margin: 0 0 0 5rem;
+}
+.about-container {
+  display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    width: 90%;
+    padding: 4rem 0;
+}
 .about--section--box {
   width: 100%;
 }
