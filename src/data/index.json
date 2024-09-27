@@ -1,0 +1,74 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "src": "./img/java.png",
+            "title": "Java",
+            "description": "Java is a multiplatform, object-oriented programming language that runs on billions of devices worldwide."
+        },
+        {
+            "id": "2",
+            "src": "./img/react.png",
+            "title": "ReactJS",
+            "description": "ReactJS is a free and open-source front-end JavaScript library for building user interfaces."
+        },
+        {
+            "id": "3",
+            "src": "./img/matlab.png",
+            "title": "MATLAB",
+            "description": "MATLAB programming platform is used to design, develop, and analyze systems and products."
+        },
+        {
+            "id": "4",
+            "src": "./img/javascript.png",
+            "title": "Javascript",
+            "description": "JavaScript is a programming language that adds interactivity to your website. "
+        }
+    ],
+    "portfolio": [
+        {
+            "id": "1",
+            "src": "./img/placeholder-image.png",
+            "title": "Portfolio Website",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+        },
+        {
+            "id": "2",
+            "src": "./img/placeholder-image-1.png",
+            "title": "App Dashboard",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+        },
+        {
+            "id": "3",
+            "src": "./img/placeholder-image-2.png",
+            "title": "Easy Rent",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+        }
+    ],
+    "testimonial": [
+        {
+            "id": "1",
+            "count": "5",
+            "src": "./img/avatar-image.png",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", 
+            "author_name": "Vegard Anuglen", 
+            "author_designation": "Høgskulen På Vestlandet"
+        },
+        {
+            "id": "2",
+            "count": "5",
+            "src": "./img/avatar-image-1.png",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", 
+            "author_name": "Helen Jacobsen", 
+            "author_designation": "Hjemmetjenesten, Færder Kommune"
+        },
+        {
+            "id": "3",
+            "count": "5",
+            "src": "./img/avatar-image-2.png",
+            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", 
+            "author_name": "Lasse Kokvik", 
+            "author_designation": "Roar I Bua"
+        }
+    ]
+}
