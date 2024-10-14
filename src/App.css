@@ -1,9 +1,31 @@
+/* Font-Face Declarations */
+@font-face {
+  font-family: 'bbkk';
+  src: url('https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/l?subset_id=2&fvd=n7&v=3') format('woff2'),
+       url('https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/d?subset_id=2&fvd=n7&v=3') format('woff'),
+       url('https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/a?subset_id=2&fvd=n7&v=3') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'ftnk';
+  src: url('https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?subset_id=2&fvd=n3&v=3') format('woff2'),
+       url('https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?subset_id=2&fvd=n3&v=3') format('woff'),
+       url('https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?subset_id=2&fvd=n3&v=3') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* Add other font-face declarations if needed */
 /* Global CSS */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smooting: "Roboto", sans-serif;
+  font-family: "bbkk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooting: grayscale;
   font-style: normal;
 }
 h1,
@@ -11,9 +33,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin: 0;
+h6 {
+ font-family: 'bbkk', sans-serif;
 }
 
 :root {
@@ -145,94 +166,117 @@ h3 {
 
 /* Navbar Style */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 85.333px;
-  background: var(--white);
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000; /* Ensure navbar is on top */
+  background-color: var(--white);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Increase padding for more space around elements */
+  height: 80px; /* Increase navbar height to resemble Henrik's */
+  overflow: visible; /* Allow the logo to overflow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
 }
-.navbar--items > ul {
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.show {
+  transform: translateY(0);
+}
+
+.navbar--items ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
-  gap: 42.667px;
+  gap: 2rem; /* Adjust spacing between the nav items */
   align-items: center;
 }
+
 .navbar--logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  transform: translateX(-50%) translateY(-50%); /* Only horizontally center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Same as navbar height */
+  z-index: 1010; /* Ensure it's visible on top */
 }
-.navbar--content {
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
+
+.navbar--logo img {
+  height: 130px; /* Adjusted size for logo (can increase or decrease) */
+  width: auto;
+  z-index: 1010;
 }
-.navbar--active-content {
-  color: var(--black);
+
+.footer--social--icon {
+  display: flex;
+  align-items: center;
 }
+
+.footer--social--icon ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer--social--icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Adjust padding/margins so that other sections start after the navbar */
+.hero-section {
+  padding-top: 8rem; /* Adjust padding for content to start below the navbar */
+}
+
 /* Navbar Style Ends */
 
 /* Hero Section Style */
 .hero-section {
   width: 100%;
+  height: 100vh; /* Full viewport height */
   display: flex;
-  gap: 5rem;
-  align-items: center;
-  padding: 11rem 0 10rem 0;
-  background-color: var(--bg-shade);
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align to the top */
+  padding-top: 2rem; /* Add some top padding to create space between the navbar and content */
+  background-color: var(--bg-shade); /* Background color */
+  text-align: center; /* Center all text horizontally */
 }
+
 .hero--section--content--box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  width: 50%;
+  justify-content: flex-start;
+  width: 100%; /* Full width */
 }
-.hero--section--content {
-  display: flex;
-  align-items: flex-start;
-  gap: 21.333px;
-  width: 100%;
-  padding: 1rem;
-}
-.hero-title {
-  margin: 0 0 0 5rem;
-}
+
 .hero--section--title {
-  font-size: 2.5rem; /* Juster til en passende størrelse */
-    font-weight: 700;
-    color: var(--heading-color);
-    white-space: nowrap; /* Holder teksten på én linje */
-    overflow: hidden; /* Hindrer at den bryter */
-    padding: 2rem 0; /* Gir litt luft til toppen og bunnen */
+  font-size: 4rem; /* Adjust as necessary */
+  font-weight: 700;
+  margin: 0;
+  color: var(--heading-color);
+  white-space: nowrap;
+  line-height: 1.2;
 }
-.hero--section--title--color {
-  color: var(--black);
+
+.cursor {
+  animation: blink 0.7s step-end infinite;
 }
-.hero--section--title-description {
-  color: var(--black);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-}
-.hero--section--img {
-  display: none;
-}
-.hero--section--img > img {
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 /* Hero Section Style Ends */
 
@@ -332,19 +376,19 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem; /* Space between image and text */
-  max-width: 70rem; /* Controls max width of the section */
+  gap: 5rem; 
+  max-width: 70rem; 
   width: 100%;
   padding: 2rem 1rem;
 }
 
-/* Left side image */
+
 .about-image img {
-  width: 30rem; /* Set image width explicitly */
-  height: 30rem; /* Set image height explicitly */
-  border-radius: 50%; /* Circular image */
-  object-fit: cover; /* Ensures a clean circle shape */
-  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 30rem; 
+  height: 30rem; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  flex-shrink: 0; 
 }
 
 /* Right side text */
