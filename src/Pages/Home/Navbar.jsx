@@ -33,92 +33,63 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`navbar ${navActive? "active": ""}`}>
-            <Link 
-            onClick={closeMenu}
-            activeClass="navbar--active-content"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            to = 'heroSection'
-            className="navbar--content"
-            >
-            <div>
-                <img src="./img/hvnguyen.svg" alt="hvnguyen"/>
-            </div>
-            </Link>
-            <a className={`nav_hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
-            </a>
-            <div className={`navbar--items ${navActive ? "active" : ""}`}>
-                <ul>
-                    <li>
-                        <Link 
-                        onClick={closeMenu}
-                        activeClass="navbar--active-content"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="mySkills"
-                        className="navbar--content"
-                        >
-                         SKILLS
-                         </Link>
-                    </li>
-                    <li>
-                        <Link 
-                        onClick={closeMenu}
-                        activeClass="navbar--active-content"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="AboutMe"
-                        className="navbar--content"
-                        >
-                         ABOUT
-                         </Link>
-                    </li>
-                    <li>
-                        <Link 
-                        onClick={closeMenu}
-                        activeClass="navbar--active-content"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="MyPortfolio"
-                        className="navbar--content"
-                        >
-                         PROJECTS
-                         </Link>
-                    </li>
-                    <li>
-                        <Link 
-                        onClick={closeMenu}
-                        activeClass="navbar--active-content"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="testimonial"
-                        className="navbar--content"
-                        >
-                        
-                         </Link>
-                    </li>
-                </ul>
-            </div>
-           
-              <div className="footer--social--icon">
-          <ul>
-            <li>
+       <nav className={`navbar ${navActive ? "active" : ""}`}>
+  <div className="navbar--items">
+    <ul>
+      <li>
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="AboutMe"
+          className="navbar--content"
+        >
+          ABOUT
+        </Link>
+      </li>
+      <li>
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="MyPortfolio"
+          className="navbar--content"
+        >
+          PROJECTS
+        </Link>
+      </li>
+      <li>
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="mySkills"
+          className="navbar--content"
+        >
+          SKILLS
+        </Link>
+      </li>
+    </ul>
+  </div>
+
+  <div className="navbar--logo">
+    <img src="./img/hvnguyen.svg" alt="hvnguyen" />
+  </div>
+
+  <div className="footer--social--icon">
+    <ul>
+    <li>
               <a
-                href="https://github.com/h678151"
+                href="https://github.com/hvnguyyen"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -149,9 +120,10 @@ function Navbar() {
                 </svg>
               </a>
             </li>
-          </ul>
-        </div>
-        </nav>
+    </ul>
+  </div>
+</nav>
+
     );
 }
 
