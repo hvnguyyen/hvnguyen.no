@@ -29,31 +29,6 @@ function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  // Handle scroll direction for showing/hiding navbar
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
-  
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-      if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        navbar.classList.add("hidden");
-      } else {
-        // Scrolling up
-        navbar.classList.remove("hidden");
-      }
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-  
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   
 
   return (
