@@ -28,21 +28,23 @@
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/placeholder-image.png",
-            "title": "Portfolio Website",
-            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+            "src": "./img/itxb-portfolio.png",
+            "title": "ITxBergen Website",
+            "description": "ITxBergen is a student organization for IT students in Bergen. This website was created to share updates, events, and organizational info. Built using Next.js and Tailwind CSS.", "link": "Se I GitHub",
+            "link": "https://github.com/echo-karriere/itxbergen-frontend" 
         },
         {
             "id": "2",
-            "src": "./img/placeholder-image-1.png",
-            "title": "App Dashboard",
-            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+            "src": "./img/cv-portfolio.png",
+            "title": "Portfolio Website",
+            "description": "This is my personal portfolio, built to showcase my projects and skills. It was developed using React with a focus on clean design, responsiveness, and practice and apply what I’ve learned outside of school.", "link": "Se I GitHub",
+            "link": "https://github.com/hvnguyyen/hvnguyen.no" 
         },
         {
             "id": "3",
             "src": "./img/placeholder-image-2.png",
-            "title": "Easy Rent",
-            "description": "Lorem ipsum dolor sit amet, concectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique", "link": "Se I GitHub"
+            "title": "Lorem ipsum dolor",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel tincidunt posuere, sapien massa facilisis urna, at ultrices nisl erat at velit. Proin eget magna sed elit volutpat venenatis et a nisi.", "link": "Se I GitHub"
         }
     ],
     "testimonial": [
