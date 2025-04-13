@@ -4,19 +4,19 @@
             "id": "1",
             "src": "./img/java.png",
             "title": "Java",
-            "description": "Java is a multiplatform, object-oriented programming language that runs on billions of devices worldwide."
+            "description": "Java is a object-oriented programming language that runs on billions of devices worldwide."
         },
         {
             "id": "2",
             "src": "./img/react.png",
-            "title": "ReactJS",
-            "description": "ReactJS is a free and open-source front-end JavaScript library for building user interfaces."
+            "title": "React",
+            "description": "React is a free and open-source front-end JavaScript library for building user interfaces."
         },
         {
             "id": "3",
-            "src": "./img/matlab.png",
-            "title": "MATLAB",
-            "description": "MATLAB programming platform is used to design, develop, and analyze systems and products."
+            "src": "./img/nextjs-icon.png",
+            "title": "Next.js",
+            "description": "Next.js is a React framework for building fast, scalable web apps with server-side rendering and improved SEO."
         },
         {
             "id": "4",
